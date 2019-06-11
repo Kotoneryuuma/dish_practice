@@ -1,0 +1,16 @@
+﻿<h2>Welcome to CRUD Delicious</h2>
+
+<h6>Chekc out some recent dishes!</h6>
+
+@model List<Dish>
+@{
+    foreach(Dish i in @Model){
+        <p><a href="@i.DishId">@i.Name</a>  by   @i.Chef</p>
+    }
+}
+<a href="/new">Add a Dish</a>
+
+
+
+
+

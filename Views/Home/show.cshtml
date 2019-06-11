@@ -1,0 +1,15 @@
+@model delicious.Models.Dish
+
+<a href="/">Home</a>
+
+<h3>@Model.Name</h3>
+<h3>@Model.Chef</h3>
+
+<h6>@Model.Description</h6>
+<h6>@Model.Calories</h6>
+<h6>@Model.Tastiness</h6>
+
+<a href="/edit/@Model.DishId" type="button">Edit</a>
+
+<a href="/delete/@Model.DishId">Delete</a>
+

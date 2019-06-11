@@ -1,0 +1,37 @@
+@model delicious.Models.Dish
+
+<h2>Add a new Dish!</h2>
+<a href="/">Home</a>
+
+<form action="/process" method="post">
+
+    <p>Chef's Name</p>
+    <input type="text" name="Name">
+    <p></p>
+
+    <p>Name of Dish</p>
+    <input type="text" name="Chef">
+    <p></p>
+
+    <p># of Calories</p>
+    <input type="int" name="Tastiness">
+    <p></p>
+
+    <p>Tastiness</p>
+    <select name="Calories">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+    </select>
+    <p></p>
+
+    <p>Description</p>
+    <textarea name="Description" rows="10" cols="30">
+    </textarea>
+    <p></p>
+
+    <button type="submit">Add Dish</button>
+
+</form>
